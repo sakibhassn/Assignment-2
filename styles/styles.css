@@ -3,14 +3,14 @@
 
 
 .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Nav Styles */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,11 +37,11 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-  font-size: 1rem;
+    font-size: 1rem;
     gap: 48px;
 }
 
-#home  {
+#home {
     font-weight: 700;
     color: #252432;
 }
@@ -65,7 +65,7 @@ nav ul li a {
     margin-bottom: 120px;
 }
 
-.banner-title{
+.banner-title {
     font-size: 4.25rem;
     font-weight: 700;
     color: #252432;
@@ -91,19 +91,45 @@ nav ul li a {
 /* Responsive Media query */
 @media screen and (max-width: 576px) {
 
-/* Made Nav Responsive */
-    .mobile-hide{
-    display: none;
-}
+    /* Made Nav Responsive */
+    .mobile-hide {
+        display: none;
+    }
 
-nav{
-    width: 95%;
-    margin: 0 auto;
-}
+    nav {
+        width: 95%;
+        margin: 0 auto;
+    }
 
-.logo {
-    width: 63px;
-    height: 38px;
-}
+    .logo {
+        width: 63px;
+        height: 38px;
+    }
+
+    /* Made Banner Responsive */
+    .banner-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 28px;
+        gap: 28px;
+    }
+
+    .banner-title {
+        margin-top: 0;
+        font-size: 1.5rem;
+
+    }
+
+    .banner-description {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+
+
+    .hero-flower {
+        width: 100%;
+        height: auto;
+    }
 
 }
